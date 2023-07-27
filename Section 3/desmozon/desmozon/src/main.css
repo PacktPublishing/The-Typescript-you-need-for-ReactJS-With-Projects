@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: rgb(34, 34, 95);
+  color: white;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header img {
+  width: 100px;
+}
+header input {
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.5);
+}
+.img-container {
+  width: 100%;
+  height: 10rem;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card button {
+  background-color: rgb(34, 34, 95);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card-body {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+}
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.products-section {
+  margin-top: 20px;
+}
+.products-section h1 {
+  text-align: center;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(34, 34, 95, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup {
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  position: relative;
+}
+.popup-img-container {
+  flex: 0.5;
+  width: 100%;
+  height: 100%;
+}
+.popup-body {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+}
+.close-btn {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+@media only screen and (max-width: 650px) {
+  .popup {
+    width: 70%;
+    height: 70%;
+    flex-direction: column;
+  }
+  .popup-img-container {
+    height: 50%;
+  }
+}

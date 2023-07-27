@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e7e9eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+#cars-container {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  max-width: 1000px;
+}
+#cars-container div {
+  background-color: rgb(172, 171, 171, 0.5);
+  border-radius: 50px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-container {
+  border: 2px solid rgb(117, 24, 67);
+  display: flex;
+  align-items: center;
+  min-width: 500px;
+}
+button {
+  padding: 20px 20px;
+  background-color: rgb(117, 24, 67);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.add-container input {
+  border: none;
+  background: transparent;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+}
